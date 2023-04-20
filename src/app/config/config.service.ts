@@ -6,4 +6,6 @@ import { APP_CONFIG, Config } from './config';
 })
 export class ConfigService {
   constructor(@Inject(APP_CONFIG) readonly config: Config) {}
+
+  // Room here for specific implementations, like retrieving a specific service URL, combining data from the configuration into usuable data to be consumed, etc.
 }
