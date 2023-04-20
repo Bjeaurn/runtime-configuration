@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
+import { APP_CONFIG, Config } from './config';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ConfigService {
-
-  constructor() { }
+  constructor(@Inject(APP_CONFIG) readonly config: Config) {}
 }
