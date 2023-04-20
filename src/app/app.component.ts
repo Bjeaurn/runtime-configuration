@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'runtime-cfg';
 
   constructor(private cfg: ConfigService) {
-    console.log(this.cfg);
+    console.log(this.cfg.api);
   }
 }
